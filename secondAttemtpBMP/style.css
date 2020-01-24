@@ -1,0 +1,231 @@
+body{
+    font-family: 'Nunito', sans-serif;
+    background-color: #fafafa;
+}
+.container{
+    width: 80vw;
+    margin: auto;
+}
+.container .leftPart{
+    width: 20%;
+    float:left;
+    position: fixed;
+}
+.container .rightPart{
+    position: relative;
+    width: 74%;
+    float:right;
+}
+.leftPart, .rightPart{
+    margin-top:30px;
+}
+.container .rightPart .row{
+    position: relative;
+    width: 33%;
+    float:left;
+}
+.container .rightPart .row img{
+    width: 70%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+.container .rightPart .row .image{
+    height: 240px;
+    position: relative;
+    overflow: hidden;
+}
+.container .rightPart .row .product{
+    background-color: #fff;
+    margin: 2px 1px;
+    padding:5px;
+    border-radius: 2px;
+
+}
+.container .rightPart .row .product p{
+    text-align: center;
+    margin-top:0;
+    font-weight: 300;
+}
+.container .rightPart .row .product h1{
+    text-align: center;
+    margin: 30px 0 25px 0;
+    font-size: 1.4em;
+}
+.container .rightPart{
+    margin-top:50px;
+    margin-bottom:50px;
+}
+.container .leftPart .search input{
+    border:none;
+    background-color: none;
+    font-size: 16px;
+    
+}
+.container .leftPart .search a{
+    color: rgb(211, 211, 211);
+    position: absolute;
+    right:20px;
+    top:12px;
+    font-size: 1em;
+}
+.container .leftPart .search {
+    padding: 8px 14px;
+    margin-top: 30px;
+    border: 2.4px solid #EDECEB;
+    border-radius: 4px;
+    font-size: 16px;  
+    background-color: #fff;
+    position: relative;
+    width: 80%;
+} 
+input::placeholder{
+    color: rgb(206, 206, 206);
+}
+.container .leftPart .sideMenu{
+    margin-top: 30px;
+}
+.container .leftPart .sideMenu li:first-child{
+    font-size: 1em;
+    font-weight: 500;
+    text-transform: uppercase;
+    color:black;
+}
+.container .leftPart .sideMenu li{
+    padding:7px 0;
+    font-weight: 300;
+    color: rgb(70, 70, 70);
+    display: block;
+    position: relative;
+}
+.container .leftPart .sideMenu li a{
+    text-align: left;
+    display: block;
+    position: absolute;
+    right: 35px;
+    color: rgb(134, 134, 134);
+    bottom:10px;
+}
+.container .leftPart .sideMenu li:last-child{
+    margin-top:20px;
+}
+.container .leftPart button{
+    width: 90%;
+    padding:15px;
+    margin-top: 220px;
+    background-color: transparent;
+    border: 1px solid #fd7b5e;
+    font-size: 1em;
+    font-weight: 500;
+    border-radius: 3px;
+    color: #fd7b5e;
+}
+.container .leftPart button:hover{
+    background-color: #fd7b5e;
+    color: white;
+}
+.container .leftPart .social{
+    width: 90%;
+    text-align: center;
+    margin-top:20px;
+}
+.container .leftPart .social a{
+    font-size: 2.1em;
+    display: block;
+    float:left;
+    width: 25%;   
+    color: rgb(189, 189, 189);
+}
+.container .leftPart .social a:hover{
+    color: #fd7b5e;
+}
+.container .rightPart nav div{
+    display: inline-block;
+    border:2px solid #fff0;
+    padding:10px;
+}
+.container .rightPart nav div:hover{
+    border:2px solid rgb(189, 189, 189);
+    transition: 0.1s;
+    border-radius: 5px;
+}
+.container nav a:hover{
+        color:#fd7b5e;
+}
+.container .rightPart nav div i{
+    margin-left:10px;
+}
+.container nav{
+    margin-left: 68%;
+    padding:20px 0;
+    box-sizing: border-box;
+}
+.container nav a{
+    margin-left:20px;
+    text-align: right;
+    font-size: 1.1em;
+    color: rgb(189, 189, 189);
+}
+.container .rightPart footer{
+    padding: 10px 0 ;
+    position: absolute;
+    font-size: 0.8em;
+    bottom:-40px;
+    right:0;
+    width: 100%;
+    border-top: 1px solid gray;
+   
+}
+footer .content{
+    width: 100%;
+    position: absolute;
+}
+footer .content .payment{
+    display: inline-block;
+    width: 20%;
+    position: relative;
+    right: -180px
+}
+footer .content .payment p{
+    font-size: 2em; 
+    display: inline;
+    
+}
+
+@media screen and (max-width:500px){
+    .container{
+        width: 90vw;
+    }
+    .container .leftPart{
+        display:none;
+    }
+    .container .rightPart{
+        width: 470px;
+    }
+    .container .rightPart .product{
+        width: 100%;
+    }
+    .rightPart .content img{
+        width: 370px;
+    }
+}
+@media screen and (max-width:1200px){
+    .container{
+        width: 80vw;
+    }
+    .container .rightPart .content{
+        width: 100%;
+    }
+    .container .rightPart .product img{
+        width: 100%;
+    }
+}
+@media screen and (max-width:700px){
+    .container{
+        width: 95vw;
+    }
+
+}
